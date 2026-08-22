@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand: #0095a6;
+  --ink: #004a53;
+  --ink-soft: #1c6068;
+  --surface: #e8fcff;
+  --surface-soft: #e2f6fb;
+  --mountain-deep: #0c5c67;
+  --mountain-mid: #135058;
+  --mountain-light: #22747d;
+  --dot-inactive: #c1dee2;
+  --muted-on-dark: #aecfd4;
+
+  --font-display: var(--font-roboto-serif), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-poppins), "Helvetica Neue", Arial, sans-serif;
+
+  --text-hero: clamp(2.5rem, 5vw, 3.75rem);
+  --text-h1: clamp(2rem, 3.5vw, 2.75rem);
+  --text-h2: clamp(1.75rem, 2.8vw, 2.25rem);
+  --text-body: 1rem;
+  --text-caption: 0.875rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --content-max: 1120px;
+  --page-pad-x: clamp(1.25rem, 6vw, 5rem);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand: var(--brand);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-mountain-deep: var(--mountain-deep);
+  --color-mountain-mid: var(--mountain-mid);
+  --color-mountain-light: var(--mountain-light);
+  --color-dot-inactive: var(--dot-inactive);
+  --color-muted-on-dark: var(--muted-on-dark);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.7;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--brand) 35%, white);
+  color: var(--ink);
+}
+
+.container-page {
+  width: min(100% - (var(--page-pad-x) * 2), var(--content-max));
+  margin-inline: auto;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.heading-split .accent {
+  color: var(--brand);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 0.7s ease-out 0.15s both;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.7s ease-out 0.3s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-fade-up,
+  .animate-fade-up-delay,
+  .animate-fade-up-delay-2 {
+    animation: none;
+  }
 }
