@@ -47,7 +47,7 @@ export function Footer() {
   }
 
   return (
-    <footer id="contact" className="bg-brand text-white">
+    <footer id="contact" className="relative z-20 bg-brand text-white">
       <div className="container-page grid gap-14 px-0 py-16 md:grid-cols-2 md:gap-16 md:py-20">
         <div>
           <Link
@@ -99,12 +99,17 @@ export function Footer() {
           <h2 className="font-display text-2xl font-semibold md:text-3xl">
             Contact Us
           </h2>
-          <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
+          <form className="relative mt-8 space-y-5" onSubmit={handleSubmit}>
             {/* Honeypot — leave empty; bots often fill it */}
-            <label className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
-              Website
-              <input type="text" name="website" tabIndex={-1} autoComplete="off" />
-            </label>
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute h-px w-px overflow-hidden opacity-0"
+            >
+              <label>
+                Website
+                <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+              </label>
+            </div>
             <label className="block">
               <span className="mb-2 block text-sm text-muted-on-dark">Name</span>
               <input
