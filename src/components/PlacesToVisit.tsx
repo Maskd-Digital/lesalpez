@@ -1,40 +1,25 @@
 import Image from "next/image";
+import { localizedHref, type Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries";
 import { Button } from "./Button";
 
-const places = [
-  {
-    src: "/assets/home/circle-1.jpg",
-    label: "Train des Merveilles",
-    alt: "Train arriving at Gare de La Brigue",
-  },
-  {
-    src: "/assets/home/circle-2.jpg",
-    label: "Valley Trails",
-    alt: "Hiker on a mountain valley path",
-  },
-  {
-    src: "/assets/home/circle-3.png",
-    label: "Painted Chapels",
-    alt: "Frescoed chapel interior near La Brigue",
-  },
-  {
-    src: "/assets/home/circle-4.png",
-    label: "Mountain Streams",
-    alt: "Visitors resting by a forest stream",
-  },
-  {
-    src: "/assets/home/circle-5.jpg",
-    label: "Fête du Citron",
-    alt: "Citrus festival sculptures in Menton",
-  },
-  {
-    src: "/assets/home/circle-6.png",
-    label: "Ski Resorts",
-    alt: "Sunny ski slopes and chairlift in the Alps",
-  },
+const placeImages = [
+  "/assets/home/circle-1.jpg",
+  "/assets/home/circle-2.jpg",
+  "/assets/home/circle-3.png",
+  "/assets/home/circle-4.png",
+  "/assets/home/circle-5.jpg",
+  "/assets/home/circle-6.png",
 ];
 
-export function PlacesToVisit() {
+type PlacesToVisitProps = {
+  lang: Locale;
+  dict: Dictionary;
+};
+
+export function PlacesToVisit({ lang, dict }: PlacesToVisitProps) {
+  const t = dict.home.places;
+
   return (
     <section
       id="out-and-about"
@@ -42,36 +27,34 @@ export function PlacesToVisit() {
     >
       <div className="container-page">
         <h2 className="heading-split text-center font-display text-[length:var(--text-h1)] font-semibold leading-[1.2]">
-          Places to <span className="accent">Visit</span>
+          {t.titleLead} <span className="accent">{t.titleAccent}</span>
         </h2>
 
         <ul className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-3 md:gap-x-10 md:gap-y-14">
-          {places.map((place) => (
-            <li key={place.src} className="flex flex-col items-center text-center">
+          {placeImages.map((src, i) => (
+            <li key={src} className="flex flex-col items-center text-center">
               <div className="relative aspect-square w-full max-w-[220px] overflow-hidden rounded-full">
                 <Image
-                  src={place.src}
-                  alt={place.alt}
+                  src={src}
+                  alt={t.items[i].alt}
                   fill
                   sizes="(max-width: 768px) 45vw, 220px"
                   className="object-cover"
                 />
               </div>
               <p className="mt-4 text-[length:var(--text-caption)] font-medium text-brand">
-                {place.label}
+                {t.items[i].label}
               </p>
             </li>
           ))}
         </ul>
 
         <div className="mx-auto mt-14 max-w-2xl text-center">
-          <p className="text-ink-soft">
-            From scenic railway journeys and quiet chapel visits to coastal
-            festivals and winter sports, the Alpes-Maritimes are endlessly
-            worth exploring — all within easy reach of your retreat.
-          </p>
+          <p className="text-ink-soft">{t.body}</p>
           <div className="mt-8">
-            <Button href="/out-and-about">View More</Button>
+            <Button href={localizedHref(lang, "/out-and-about")}>
+              {dict.common.viewMore}
+            </Button>
           </div>
         </div>
       </div>

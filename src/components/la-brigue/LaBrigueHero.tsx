@@ -1,13 +1,22 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Header } from "@/components/Header";
+import type { Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries";
 
-export function LaBrigueHero() {
+type LaBrigueHeroProps = {
+  lang: Locale;
+  dict: Dictionary;
+};
+
+export function LaBrigueHero({ lang, dict }: LaBrigueHeroProps) {
+  const t = dict.laBrigue.hero;
+
   return (
     <section className="relative min-h-[120svh] overflow-hidden text-white">
       <Image
         src="/assets/la-brigue/hero.jpg"
-        alt="La Brigue mountain village nestled in an alpine valley"
+        alt={t.imageAlt}
         fill
         priority
         sizes="100vw"
@@ -19,17 +28,17 @@ export function LaBrigueHero() {
         aria-hidden="true"
       />
 
-      <Header />
+      <Header lang={lang} labels={dict.nav} logoAlt={dict.meta.logoAlt} />
 
       <div className="relative z-10 flex min-h-[120svh] flex-col items-center justify-center px-[var(--page-pad-x)] pb-44 pt-28 text-center md:pb-52">
         <h1 className="animate-fade-up font-display text-[length:var(--text-hero)] font-semibold leading-[1.15] tracking-tight">
-          Where the Mountains Whisper,
+          {t.titleLine1}
           <br />
-          and Time Stands Still.
+          {t.titleLine2}
         </h1>
         <div className="animate-fade-up-delay mt-10">
           <Button href="#contact" variant="outline">
-            Contact Us
+            {dict.common.contactUs}
           </Button>
         </div>
       </div>

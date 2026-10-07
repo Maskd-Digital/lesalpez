@@ -2,30 +2,23 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { localizedHref, type Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries";
 import { Button } from "./Button";
 
-const slides = [
-  {
-    src: "/assets/home/our-apartment-slide-1.jpg",
-    alt: "Bright living space in the Les Alpes D’Azur apartment",
-  },
-  {
-    src: "/assets/home/our-apartment-slide-2.jpg",
-    alt: "Bathroom with walk-in shower",
-  },
-  {
-    src: "/assets/home/our-apartment-slide-3.jpg",
-    alt: "Bedroom with red patterned bedspread",
-  },
-  {
-    src: "/assets/home/our-apartment-slide-4.jpg",
-    alt: "Kitchen looking through to the living space",
-  },
-  {
-    src: "/assets/home/our-apartment-slide-5.jpg",
-    alt: "Balcony looking out over La Brigue and the mountains",
-  },
+const slideImages = [
+  "/assets/home/our-apartment-slide-1.jpg",
+  "/assets/home/our-apartment-slide-2.jpg",
+  "/assets/home/our-apartment-slide-3.jpg",
+  "/assets/home/our-apartment-slide-4.jpg",
+  "/assets/home/our-apartment-slide-5.jpg",
 ];
+
+type FeatureApartmentProps = {
+  lang: Locale;
+  content: Dictionary["home"]["apartment"];
+  common: Dictionary["common"];
+};
 
 function ChevronLeft() {
   return (
@@ -49,8 +42,13 @@ function ChevronRight() {
   );
 }
 
-export function FeatureApartment() {
+export function FeatureApartment({
+  lang,
+  content,
+  common,
+}: FeatureApartmentProps) {
   const [index, setIndex] = useState(0);
+  const slides = slideImages.map((src, i) => ({ src, alt: content.slides[i] }));
   const count = slides.length;
 
   function goTo(next: number) {
@@ -65,15 +63,13 @@ export function FeatureApartment() {
       <div className="container-page grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="order-2 lg:order-1">
           <h2 className="heading-split font-display text-[length:var(--text-h2)] font-semibold leading-[1.25]">
-            Our <span className="accent">Apartment</span>
+            {content.titleLead} <span className="accent">{content.titleAccent}</span>
           </h2>
-          <p className="mt-6 max-w-md text-ink-soft">
-            A luminous alpine flat with warm interiors, generous light, and
-            everything you need for an easy stay — from leisurely breakfasts to
-            evenings in after a day outdoors.
-          </p>
+          <p className="mt-6 max-w-md text-ink-soft">{content.body}</p>
           <div className="mt-8">
-            <Button href="/apartment">View More</Button>
+            <Button href={localizedHref(lang, "/apartment")}>
+              {common.viewMore}
+            </Button>
           </div>
         </div>
 
@@ -94,7 +90,7 @@ export function FeatureApartment() {
             <button
               type="button"
               className="absolute top-1/2 left-3 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-brand shadow-sm transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-              aria-label="Previous photo"
+              aria-label={common.previousPhoto}
               onClick={() => goTo(index - 1)}
             >
               <ChevronLeft />
@@ -102,7 +98,7 @@ export function FeatureApartment() {
             <button
               type="button"
               className="absolute top-1/2 right-3 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-brand shadow-sm transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-              aria-label="Next photo"
+              aria-label={common.nextPhoto}
               onClick={() => goTo(index + 1)}
             >
               <ChevronRight />
@@ -111,7 +107,7 @@ export function FeatureApartment() {
           <div
             className="mt-5 flex justify-center gap-2.5"
             role="tablist"
-            aria-label="Apartment photos"
+            aria-label={content.photosLabel}
           >
             {slides.map((slide, i) => (
               <button
@@ -119,7 +115,7 @@ export function FeatureApartment() {
                 type="button"
                 role="tab"
                 aria-selected={i === index}
-                aria-label={`Show photo ${i + 1}`}
+                aria-label={common.showPhoto.replace("{n}", String(i + 1))}
                 className={`h-2.5 w-2.5 rounded-full transition-colors ${
                   i === index ? "bg-brand" : "bg-dot-inactive"
                 }`}

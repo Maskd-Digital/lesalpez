@@ -1,13 +1,22 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Header } from "@/components/Header";
+import type { Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries";
 
-export function OutAndAboutHero() {
+type OutAndAboutHeroProps = {
+  lang: Locale;
+  dict: Dictionary;
+};
+
+export function OutAndAboutHero({ lang, dict }: OutAndAboutHeroProps) {
+  const t = dict.outAndAbout.hero;
+
   return (
     <section className="relative min-h-[120svh] overflow-hidden text-white">
       <Image
         src="/assets/la-brigue/hero.jpg"
-        alt="Stone village and alpine valley near La Brigue"
+        alt={t.imageAlt}
         fill
         priority
         sizes="100vw"
@@ -19,20 +28,20 @@ export function OutAndAboutHero() {
         aria-hidden="true"
       />
 
-      <Header />
+      <Header lang={lang} labels={dict.nav} logoAlt={dict.meta.logoAlt} />
 
       <div className="relative z-10 flex min-h-[120svh] flex-col items-center justify-center px-[var(--page-pad-x)] pb-44 pt-28 text-center md:pb-52">
         <h1 className="animate-fade-up font-display text-[length:var(--text-hero)] font-semibold leading-[1.15] tracking-tight">
-          Wander the Wild,
+          {t.titleLine1}
           <br />
-          Rediscover the Quiet.
+          {t.titleLine2}
         </h1>
         <p className="animate-fade-up-delay mt-5 text-[length:var(--text-lead,1.125rem)] font-light text-white/95">
-          Explore the Area
+          {t.subtitle}
         </p>
         <div className="animate-fade-up-delay-2 mt-10">
           <Button href="#contact" variant="outline">
-            Contact Us
+            {dict.common.contactUs}
           </Button>
         </div>
       </div>

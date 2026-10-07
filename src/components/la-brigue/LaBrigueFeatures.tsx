@@ -2,40 +2,30 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import type { Dictionary } from "@/i18n/dictionaries";
 
-const feteSlides = [
-  {
-    src: "/assets/la-brigue/slider-1.jpg",
-    alt: "Festival scenes during La Fête de la Brebis Brigasque",
-  },
-  {
-    src: "/assets/la-brigue/slider-2.jpg",
-    alt: "Village celebration at La Fête de la Brebis Brigasque",
-  },
-  {
-    src: "/assets/la-brigue/slider-3.jpg",
-    alt: "Crowds and festivities in La Brigue",
-  },
+type Features = Dictionary["laBrigue"]["features"];
+
+const feteImages = [
+  "/assets/la-brigue/slider-1.jpg",
+  "/assets/la-brigue/slider-2.jpg",
+  "/assets/la-brigue/slider-3.jpg",
 ];
 
 const otherFeatures = [
   {
     id: "chateau-lascaris",
-    title: "Château des Lascaris",
+    key: "chateau",
     image: "/assets/la-brigue/chateau-lascaris.png",
-    alt: "Stone remains of the Château des Lascaris above La Brigue",
     imageFirst: false,
-    body: "Rising above the village, the ruins of the Château des Lascaris recall centuries of regional power and defence. From the heights, stone walls and towers open onto sweeping valley views — a reminder of La Brigue’s strategic place between alpine routes and the Mediterranean.",
   },
   {
     id: "abeille-geante",
-    title: "L’Abeille Géante de La Brigue",
+    key: "abeille",
     image: "/assets/la-brigue/abeille-geante.png",
-    alt: "Giant bee sculpture overlooking the valley near La Brigue",
     imageFirst: true,
-    body: "This striking contemporary sculpture watches over the valley as a modern emblem of the region. Set against cliffs and alpine light, L’Abeille Géante offers a memorable stop for walkers and visitors exploring the landscapes around La Brigue.",
   },
-];
+] as const;
 
 function ChevronLeft() {
   return (
@@ -59,8 +49,15 @@ function ChevronRight() {
   );
 }
 
-function FeteSlider() {
+function FeteSlider({
+  fete,
+  showPhoto,
+}: {
+  fete: Features["fete"];
+  showPhoto: string;
+}) {
   const [index, setIndex] = useState(0);
+  const feteSlides = feteImages.map((src, i) => ({ src, alt: fete.slides[i] }));
   const count = feteSlides.length;
 
   function goTo(next: number) {
@@ -85,7 +82,7 @@ function FeteSlider() {
         <button
           type="button"
           className="absolute top-1/2 left-3 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-brand shadow-sm transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-          aria-label="Previous festival photo"
+          aria-label={fete.previous}
           onClick={() => goTo(index - 1)}
         >
           <ChevronLeft />
@@ -93,7 +90,7 @@ function FeteSlider() {
         <button
           type="button"
           className="absolute top-1/2 right-3 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-brand shadow-sm transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
-          aria-label="Next festival photo"
+          aria-label={fete.next}
           onClick={() => goTo(index + 1)}
         >
           <ChevronRight />
@@ -102,7 +99,7 @@ function FeteSlider() {
       <div
         className="mt-5 flex justify-center gap-2.5"
         role="tablist"
-        aria-label="Festival photos"
+        aria-label={fete.photosLabel}
       >
         {feteSlides.map((slide, i) => (
           <button
@@ -110,7 +107,7 @@ function FeteSlider() {
             type="button"
             role="tab"
             aria-selected={i === index}
-            aria-label={`Show photo ${i + 1}`}
+            aria-label={showPhoto.replace("{n}", String(i + 1))}
             className={`h-2.5 w-2.5 rounded-full transition-colors ${
               i === index ? "bg-brand" : "bg-dot-inactive"
             }`}
@@ -122,7 +119,12 @@ function FeteSlider() {
   );
 }
 
-export function LaBrigueFeatures() {
+type LaBrigueFeaturesProps = {
+  content: Features;
+  common: Dictionary["common"];
+};
+
+export function LaBrigueFeatures({ content, common }: LaBrigueFeaturesProps) {
   return (
     <section className="bg-surface px-[var(--page-pad-x)] pb-12 md:pb-20">
       <div className="container-page space-y-20 md:space-y-28">
@@ -130,21 +132,18 @@ export function LaBrigueFeatures() {
           id="fete-brebis"
           className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16"
         >
-          <FeteSlider />
+          <FeteSlider fete={content.fete} showPhoto={common.showPhoto} />
           <div>
             <h2 className="font-display text-[length:var(--text-h2)] font-semibold leading-[1.25] text-ink">
-              La Fête de la Brebis Brigasque
+              {content.fete.title}
             </h2>
-            <p className="mt-6 max-w-md text-ink-soft">
-              Each year the village celebrates the Brigasque sheep with music,
-              food, and community gatherings that fill the streets of La Brigue.
-              It is a joyful expression of local identity — connecting pasture
-              traditions with the living culture of the Roya Valley.
-            </p>
+            <p className="mt-6 max-w-md text-ink-soft">{content.fete.body}</p>
           </div>
         </article>
 
-        {otherFeatures.map((feature) => (
+        {otherFeatures.map((feature) => {
+          const text = content[feature.key];
+          return (
           <article
             key={feature.id}
             id={feature.id}
@@ -157,7 +156,7 @@ export function LaBrigueFeatures() {
             >
               <Image
                 src={feature.image}
-                alt={feature.alt}
+                alt={text.alt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -165,12 +164,13 @@ export function LaBrigueFeatures() {
             </div>
             <div className={feature.imageFirst ? "" : "lg:order-1"}>
               <h2 className="font-display text-[length:var(--text-h2)] font-semibold leading-[1.25] text-ink">
-                {feature.title}
+                {text.title}
               </h2>
-              <p className="mt-6 max-w-md text-ink-soft">{feature.body}</p>
+              <p className="mt-6 max-w-md text-ink-soft">{text.body}</p>
             </div>
           </article>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

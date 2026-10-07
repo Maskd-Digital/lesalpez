@@ -1,5 +1,5 @@
 export const navLinks = [
-  { href: "/apartment", label: "Apartment", match: "/apartment" },
-  { href: "/la-brigue", label: "La Brigue", match: "/la-brigue" },
-  { href: "/out-and-about", label: "Out & About", match: "/out-and-about" },
+  { href: "/apartment", key: "apartment" },
+  { href: "/la-brigue", key: "laBrigue" },
+  { href: "/out-and-about", key: "outAndAbout" },
 ] as const;

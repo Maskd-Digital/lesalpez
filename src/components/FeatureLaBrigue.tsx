@@ -1,7 +1,16 @@
 import Image from "next/image";
+import { localizedHref, type Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries";
 import { Button } from "./Button";
 
-export function FeatureLaBrigue() {
+type FeatureLaBrigueProps = {
+  lang: Locale;
+  dict: Dictionary;
+};
+
+export function FeatureLaBrigue({ lang, dict }: FeatureLaBrigueProps) {
+  const t = dict.home.laBrigue;
+
   return (
     <section
       id="la-brigue"
@@ -11,7 +20,7 @@ export function FeatureLaBrigue() {
         <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-md)]">
           <Image
             src="/assets/home/living-heritage-slide-1.jpg"
-            alt="Historic stone tower and architecture in La Brigue"
+            alt={t.imageAlt}
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
@@ -20,17 +29,13 @@ export function FeatureLaBrigue() {
 
         <div>
           <h2 className="heading-split font-display text-[length:var(--text-h2)] font-semibold leading-[1.25]">
-            La Brigue :{" "}
-            <span className="accent">The Living Heritage of the Alps</span>
+            {t.titleLead} <span className="accent">{t.titleAccent}</span>
           </h2>
-          <p className="mt-6 max-w-md text-ink-soft">
-            Stone lanes, painted chapels, and mountain silence — La Brigue
-            keeps centuries of Alpine culture alive. Stroll the village, visit
-            nearby valleys, and feel the rhythm of a place shaped by tradition
-            and landscape.
-          </p>
+          <p className="mt-6 max-w-md text-ink-soft">{t.body}</p>
           <div className="mt-8">
-            <Button href="/la-brigue">View More</Button>
+            <Button href={localizedHref(lang, "/la-brigue")}>
+              {dict.common.viewMore}
+            </Button>
           </div>
         </div>
       </div>

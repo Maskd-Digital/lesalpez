@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "title": "Les Alpes D’Azur | Ferienwohnung",
+    "description": "Ihr Rückzugsort im Herzen der Berge — Ferienwohnung in den französischen Südalpen, Alpes-Maritimes.",
+    "logoAlt": "Les Alpes D’Azur — Ferienwohnung"
+  },
+  "nav": {
+    "apartment": "Wohnung",
+    "laBrigue": "La Brigue",
+    "outAndAbout": "Ausflüge",
+    "primary": "Hauptnavigation",
+    "mobile": "Mobil",
+    "menu": "Menü",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "language": "Sprache"
+  },
+  "common": {
+    "contactUs": "Kontakt",
+    "viewMore": "Mehr erfahren",
+    "previousPhoto": "Vorheriges Foto",
+    "nextPhoto": "Nächstes Foto",
+    "showPhoto": "Foto {n} anzeigen"
+  },
+  "footer": {
+    "tagline": "Ihr Rückzugsort im Herzen der Berge.",
+    "description": "Ein ruhiges alpines Zuhause in La Brigue — für Reisende, die Komfort, Natur und echtes Ortsgefühl suchen.",
+    "quickLinks": "Schnellzugriff",
+    "footerNav": "Fußzeile",
+    "contactTitle": "Kontakt",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet…",
+    "sent": "Vielen Dank — wir melden uns in Kürze.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "credit": "Design & Entwicklung von Mask'd"
+  },
+  "home": {
+    "meta": {
+      "title": "Les Alpes D’Azur | Ferienwohnung",
+      "description": "Ihr Rückzugsort im Herzen der Berge — Ferienwohnung in den französischen Südalpen, Alpes-Maritimes."
+    },
+    "hero": {
+      "imageAlt": "Sonnenbeschienenes Tal in den französischen Südalpen",
+      "titleLine1": "Ihr Rückzugsort im Herzen",
+      "titleLine2": "der Berge.",
+      "subtitle": "Die französischen Südalpen, Alpes-Maritimes"
+    },
+    "welcome": {
+      "titleLead": "Willkommen bei",
+      "titleAccent": "Les Alpes D’Azur",
+      "paragraphs": [
+        "Eingebettet in das malerische Dorf La Brigue lädt Sie unsere Ferienwohnung ein, zur Ruhe zu kommen und die Bergluft zu genießen. Erwachen Sie im alpinen Licht, schlendern Sie durch geschichtsträchtige Gassen und kehren Sie in ein ruhiges, liebevoll vorbereitetes Zuhause zurück.",
+        "Ob Sie wegen der Wanderwege, der historischen Kapellen, der Winterpisten oder einfach für einen ruhigen Abend auf der Terrasse kommen — Les Alpes D’Azur ist Ihr Rückzugsort im Herzen der französischen Südalpen."
+      ]
+    },
+    "apartment": {
+      "titleLead": "Unsere",
+      "titleAccent": "Wohnung",
+      "body": "Eine lichtdurchflutete Alpenwohnung mit warmem Interieur und allem, was Sie für einen entspannten Aufenthalt brauchen — vom gemütlichen Frühstück bis zu ruhigen Abenden nach einem Tag im Freien.",
+      "photosLabel": "Fotos der Wohnung",
+      "slides": [
+        "Heller Wohnbereich in der Wohnung Les Alpes D’Azur",
+        "Badezimmer mit ebenerdiger Dusche",
+        "Schlafzimmer mit rot gemusterter Tagesdecke",
+        "Küche mit Blick in den Wohnbereich",
+        "Balkon mit Blick über La Brigue und die Berge"
+      ]
+    },
+    "laBrigue": {
+      "titleLead": "La Brigue:",
+      "titleAccent": "Das lebendige Erbe der Alpen",
+      "body": "Steingassen, bemalte Kapellen und die Stille der Berge — La Brigue hält jahrhundertealte alpine Kultur lebendig. Bummeln Sie durch das Dorf, besuchen Sie die umliegenden Täler und spüren Sie den Rhythmus eines Ortes, der von Tradition und Landschaft geprägt ist.",
+      "imageAlt": "Historischer Steinturm und Architektur in La Brigue"
+    },
+    "places": {
+      "titleLead": "Sehenswerte",
+      "titleAccent": "Orte",
+      "items": [
+        { "label": "Train des Merveilles", "alt": "Zug bei der Einfahrt in den Bahnhof La Brigue" },
+        { "label": "Talwanderwege", "alt": "Wanderer auf einem Bergpfad im Tal" },
+        { "label": "Bemalte Kapellen", "alt": "Mit Fresken geschmücktes Kapelleninneres bei La Brigue" },
+        { "label": "Gebirgsbäche", "alt": "Besucher rasten an einem Waldbach" },
+        { "label": "Fête du Citron", "alt": "Zitrusskulpturen beim Zitronenfest in Menton" },
+        { "label": "Skigebiete", "alt": "Sonnige Skipisten und Sessellift in den Alpen" }
+      ],
+      "body": "Von Panoramabahnfahrten und stillen Kapellenbesuchen bis zu Festen an der Küste und Wintersport — die Alpes-Maritimes laden zu endlosen Entdeckungen ein, alle bequem von Ihrem Rückzugsort aus erreichbar."
+    }
+  },
+  "apartment": {
+    "meta": {
+      "title": "Wohnung | Les Alpes D’Azur",
+      "description": "Entdecken Sie Les Alpes D’Azur — eine ruhige Ferienwohnung an der Place de Nice in La Brigue, hoch über der Küste in den französischen Südalpen."
+    },
+    "hero": {
+      "imageAlt": "Historische blaue Fassade des Wohnhauses in La Brigue",
+      "titleLine1": "Hoch über der Küste:",
+      "titleLine2": "Eine Wohnung näher am Himmel."
+    },
+    "about": {
+      "titleLead": "Über",
+      "titleAccent": "Les Alpes D’Azur",
+      "body": "Einst ein Albergo aus dem Jahr 1882, strahlt das Gebäude noch heute die stille Erhabenheit einer vergangenen Zeit aus. Heute bietet Les Alpes D’Azur eine ruhige Ferienwohnung an der Place de Nice im Herzen von La Brigue — hoch über der Riviera, nahe den Bergpfaden und mitten im Dorfleben.",
+      "images": [
+        {
+          "alt": "Bergtal und Dorf vom Ostbalkon aus gesehen",
+          "title": "Blick vom Ostbalkon",
+          "description": "Erwachen Sie vor einem weiten, lebendigen Panorama. Vom Ostbalkon aus beginnen Ihre Morgen mit dem ersten goldenen Licht auf den schneebedeckten Graten, die ein malerisches Tal einrahmen, in dem schroffe Alpenfelsen auf beschauliches Dorfleben treffen. Die perfekte Kulisse für Ihren Morgenespresso."
+        },
+        {
+          "alt": "Frühstück auf dem Ostbalkon mit Blick auf die Berge",
+          "title": "Der Ostbalkon",
+          "description": "Treten Sie hinaus auf Ihre eigene private Aussichtsgalerie über dem Tal. Geschaffen für entspannte Morgen und ruhige Nachmittage, bietet dieser sonnige Außenbereich den idealen Ort, um sich zurückzulehnen, die frische Bergbrise zu spüren und die zeitlose Schönheit der umliegenden Gipfel zu genießen."
+        },
+        {
+          "alt": "Gast sitzt auf dem Ostbalkon mit Blick auf die Berge",
+          "title": "Der Ostbalkon",
+          "description": "Treten Sie hinaus auf Ihre eigene private Aussichtsgalerie über dem Tal. Geschaffen für entspannte Morgen und ruhige Nachmittage, bietet dieser sonnige Außenbereich den idealen Ort, um sich zurückzulehnen, die frische Bergbrise zu spüren und die zeitlose Schönheit der umliegenden Gipfel zu genießen."
+        },
+        {
+          "alt": "Dorfplatz und Felsgipfel vom Westbalkon aus gesehen",
+          "title": "Blick vom Westbalkon",
+          "description": "Schauen Sie vom Westbalkon hinaus und spüren Sie sofort den Puls der Region. Dieser Aussichtspunkt überblickt den historischen, sonnenverwöhnten Dorfplatz, umrahmt von eindrucksvollen, steil in den Himmel ragenden Felswänden. Der perfekte Ort, um das Dorfleben vor einer atemberaubenden Bergkulisse zu beobachten, während der Nachmittag in den Abend übergeht."
+        }
+      ]
+    },
+    "inside": {
+      "titleLead": "Im Inneren von",
+      "titleAccent": "Les Alpes D’Azur",
+      "body": "Die Wohnung öffnet sich zu einem hellen Wohn- und Küchenbereich mit einladendem Kamin, einem komfortablen Doppelschlafzimmer und einem durchdacht gestalteten Badezimmer. Jeder Winkel ist für entspannte Morgen, ruhige Abende und unbeschwerte Tage zwischen Ihren Abenteuern vorbereitet.",
+      "images": [
+        {
+          "alt": "Schlafzimmer mit gemütlicher alpiner Bettwäsche",
+          "title": "Das Schlafzimmer",
+          "description": "Betreten Sie einen friedlichen Rückzugsort, der klassische Bergwärme mühelos mit einer intimen, einladenden Atmosphäre verbindet. Von drei Seiten mit Tageslicht durchflutet und mit echten Lärchenholzböden aus der Region ausgestattet, ist dieses sonnige Refugium im zweiten Stock als ruhige Oase zum vollständigen Abschalten gestaltet. Von einem der privaten Balkone aus können Sie den Sonnenaufgang über den östlichen Gipfeln beobachten oder auf die historische Architektur und das lebhafte Treiben des Dorfplatzes hinabblicken. Es bietet eine exquisite Balance aus historischem Charakter, modernem Komfort und gemütlicher Holzofenwärme — der ideale Ort, um nach einem Tag in den Alpen auszuruhen und neue Kraft zu tanken."
+        },
+        {
+          "alt": "Sitzbereich im Wohnzimmer",
+          "title": "Das Wohnzimmer",
+          "description": "Gestaltet für offene, gemeinsame Momente, verbindet der zentrale Wohnbereich im zweiten Stock nahtlos historischen Charme mit moderner Funktionalität. Durch drei große Fenster von Süden und Westen mit Tageslicht durchflutet, verfügt dieser luftige Wohn- und Essbereich über echte Lärchenholzböden aus der Region und einen gemütlichen Holzofen, der Sie in kühlen Alpennächten wärmt. Ob Sie in der voll ausgestatteten Küche mit Kochfeld, Backofen, Mikrowelle und Kühl-/Gefrierschrank ein hausgemachtes Essen zubereiten oder auf den Westbalkon treten, um über die lebhaften Märkte und Feste der Place de Nice und die historische Chapelle Saint-Michel zu blicken — dieser sonnige Raum bildet das warme, gesellige Herz Ihres Bergaufenthalts in dieser historischen ehemaligen Poststation von 1882."
+        },
+        {
+          "alt": "Wohnbereich mit Kamin",
+          "title": "Das Wohnzimmer",
+          "description": "Gestaltet für offene, gemeinsame Momente, verbindet der zentrale Wohnbereich im zweiten Stock nahtlos historischen Charme mit moderner Funktionalität. Durch drei große Fenster von Süden und Westen mit Tageslicht durchflutet, verfügt dieser luftige Wohn- und Essbereich über echte Lärchenholzböden aus der Region und einen gemütlichen Holzofen, der Sie in kühlen Alpennächten wärmt. Ob Sie in der voll ausgestatteten Küche mit Kochfeld, Backofen, Mikrowelle und Kühl-/Gefrierschrank ein hausgemachtes Essen zubereiten oder auf den Westbalkon treten, um über die lebhaften Märkte und Feste der Place de Nice und die historische Chapelle Saint-Michel zu blicken — dieser sonnige Raum bildet das warme, gesellige Herz Ihres Bergaufenthalts in dieser historischen ehemaligen Poststation von 1882."
+        },
+        {
+          "alt": "Küche und Essbereich",
+          "title": "Die Küche",
+          "description": "Voll ausgestattet und durchdacht für müheloses Kochen im Urlaub, ist die Küche eine funktionale Erweiterung des sonnigen zentralen Wohnbereichs. Ob Sie ein frisches Frühstück mit Zutaten von den Dorfmärkten zubereiten oder nach einem langen Tag auf den Wanderwegen ein herzhaftes Abendessen kochen — hier finden Sie alles, was Sie brauchen, darunter Kochfeld, Backofen, Mikrowelle, Wasserkocher, Toaster und eine Kühl-Gefrier-Kombination. Sie ist großzügig mit Geschirr, Gläsern und Kochutensilien ausgestattet, sodass Sie mühelos Gäste bewirten können. Nur wenige Schritte vom Esstisch und dem Westbalkon entfernt, bleiben Sie beim Kochen Teil des Gesprächs und genießen den herrlichen Blick über die Place de Nice."
+        },
+        {
+          "alt": "Details des Badezimmers",
+          "title": "Das Badezimmer",
+          "description": "Als frischer, belebender Raum gestaltet, um die Abenteuer des Tages abzuwaschen, verbindet das Badezimmer moderne Funktionalität mit klassischem Dorfcharme. Der gut ausgestattete Raum bietet eine geräumige ebenerdige Dusche, ein Waschbecken, ein WC und ein traditionelles Bidet. Ein kleines, nach Osten ausgerichtetes Fenster lässt das sanfte Morgenlicht herein und schafft eine helle, luftige Atmosphäre, während Sie sich auf einen Tag in den Bergen vorbereiten. Mit frischen Handtüchern und dem Nötigsten ausgestattet, bietet es einen sauberen, privaten Rückzugsort zum Erfrischen und Erholen im Herzen dieses historischen Gebäudes."
+        },
+        {
+          "alt": "Essbereich neben dem Wohnbereich",
+          "title": "Das Esszimmer",
+          "description": "Perfekt im sonnigen, offenen Herzen der Wohnung gelegen, ist der Essbereich für gemeinsame Momente und geselliges Beisammensein gestaltet. Durch große, nach Süden und Westen ausgerichtete Fenster mit Tageslicht durchflutet, lädt der Raum dazu ein, sich bei hausgemachten Mahlzeiten aus der angrenzenden, voll ausgestatteten Küche zu versammeln. Mit echten Lärchenholzböden aus der Region und der Wärme des knisternden Holzfeuers in der Nähe entsteht eine gemütliche, intime Atmosphäre, um die Abenteuer des Tages zu planen. Nach dem Abendessen können Sie direkt auf den Westbalkon treten und beobachten, wie das Abendlicht über der historischen Chapelle Saint-Michel und den Berggipfeln dahinter verblasst."
+        }
+      ]
+    },
+    "details": {
+      "additionalTitle": "Weitere Informationen",
+      "items": [
+        "Der Zugang erfolgt über Treppen — bitte beachten Sie, dass es im Gebäude keinen Aufzug gibt.",
+        "Haustiere sind auf Anfrage eventuell willkommen; teilen Sie uns dies bitte bei Ihrer Anfrage mit.",
+        "Dorfveranstaltungen wie die Fête de la Brebis bringen zu jeder Jahreszeit Leben nach La Brigue.",
+        "Check-in ab 16:00 Uhr · Check-out bis 10:00 Uhr (flexible Zeiten nach Möglichkeit).",
+        "Die gesamte Wohnung ist eine Nichtraucherwohnung.",
+        "Parkplätze sind in der Nähe vorhanden; das Dorf ist auch mit dem Regionalzug erreichbar."
+      ],
+      "pricesTitle": "Preise & Verfügbarkeit",
+      "pricesBody": "Aktuelle Preise und freie Termine finden Sie auf Airbnb und Booking.com. Sie möchten lieber eine persönliche Antwort? Nutzen Sie das Kontaktformular unten, und wir helfen Ihnen gerne bei der Planung Ihres Aufenthalts in La Brigue."
+    }
+  },
+  "laBrigue": {
+    "meta": {
+      "title": "La Brigue | Les Alpes D’Azur",
+      "description": "Entdecken Sie La Brigue — lebendiges alpines Erbe, historische Denkmäler, Feste und Outdoor-Aktivitäten in den französischen Südalpen."
+    },
+    "hero": {
+      "imageAlt": "Das Bergdorf La Brigue, eingebettet in ein Alpental",
+      "titleLine1": "Wo die Berge flüstern",
+      "titleLine2": "und die Zeit stillsteht."
+    },
+    "heritage": {
+      "titleLead": "Das",
+      "titleAccent": "lebendige Erbe",
+      "titleTail": "der Alpen",
+      "paragraphs": [
+        "Eingebettet im Roya-Tal der Alpes-Maritimes ist La Brigue ein Dorf, das von Jahrhunderten des Berglebens geprägt wurde. Steinfassaden, bemalte Kapellen und stille Gassen tragen noch immer den Rhythmus eines Ortes, an dem Tradition und Landschaft eng miteinander verwoben sind.",
+        "Von saisonalen Festen und Almweiden bis zu Spaziergängen am Fluss und Dorftreffen bleibt das Alltagsleben hier tief im Erbe verwurzelt — und schenkt Besuchern ein seltenes Gefühl von Beständigkeit im Herzen der französischen Südalpen."
+      ],
+      "images": [
+        { "alt": "Chez Luca Pizza & Cucina in La Brigue", "title": "Pizzeria Chez Luca" },
+        { "alt": "Schafe überqueren die Straße während der Fête de la Brebis Brigasque", "title": "La Fête de la Brebis Brigasque" },
+        { "alt": "Hochlandrinder auf den Wiesen bei La Brigue", "title": "Hochlandrinder" },
+        { "alt": "Steinbrücke über den Fluss La Levense", "title": "Der Fluss Levense" }
+      ]
+    },
+    "monuments": {
+      "titleLead": "Historische",
+      "titleAccent": "Denkmäler",
+      "paragraphs": [
+        "Für ein Dorf seiner Größe bewahrt La Brigue eine außergewöhnliche Dichte an historischen Denkmälern. Sakrale Kunst, Überreste von Befestigungen und jahrhundertealte Architektur prägen die Landschaft und erzählen die Geschichte einer Gemeinschaft, die von Glauben, Handel und der Verteidigung der Berge geformt wurde.",
+        "Besucher können Kapellen, Stiftskirchen und Burgruinen erkunden, die bis heute in das Dorfleben eingebunden sind — jede davon eine stille Begegnung mit dem künstlerischen und architektonischen Erbe des Roya-Tals."
+      ],
+      "items": [
+        "Chapelle Notre-Dame-des-Fontaines — berühmt für ihre bemerkenswerten Fresken",
+        "Collégiale Saint-Martin — das historische Pfarrzentrum des Dorfes",
+        "Chapelle Saint-Michel — ein Wahrzeichen mit Blick auf die Place de Nice",
+        "Überreste des Château des Lascaris — hoch über dem Tal gelegen"
+      ]
+    },
+    "features": {
+      "fete": {
+        "title": "La Fête de la Brebis Brigasque",
+        "body": "Jedes Jahr feiert das Dorf das Brigasker Schaf mit Musik, regionalen Speisen und geselligen Zusammenkünften, die die Straßen von La Brigue füllen. Es ist ein fröhlicher Ausdruck lokaler Identität — der die Weidetraditionen mit der lebendigen Kultur des Roya-Tals verbindet.",
+        "photosLabel": "Fotos vom Fest",
+        "previous": "Vorheriges Festfoto",
+        "next": "Nächstes Festfoto",
+        "slides": [
+          "Festszenen während der Fête de la Brebis Brigasque",
+          "Dorffest bei der Fête de la Brebis Brigasque",
+          "Menschenmenge und Festlichkeiten in La Brigue"
+        ]
+      },
+      "chateau": {
+        "title": "Château des Lascaris",
+        "alt": "Steinerne Überreste des Château des Lascaris oberhalb von La Brigue",
+        "body": "Hoch über dem Dorf erinnern die Ruinen des Château des Lascaris an Jahrhunderte regionaler Macht und Verteidigung. Von den Höhen öffnen sich Steinmauern und Türme zu weiten Talblicken — ein Zeugnis der strategischen Lage von La Brigue zwischen den Alpenrouten und dem Mittelmeer."
+      },
+      "abeille": {
+        "title": "L’Abeille Géante de La Brigue",
+        "alt": "Skulptur einer Riesenbiene mit Blick über das Tal bei La Brigue",
+        "body": "Diese eindrucksvolle zeitgenössische Skulptur wacht als modernes Wahrzeichen der Region über das Tal. Vor Felswänden und alpinem Licht ist L’Abeille Géante (die Riesenbiene) ein unvergesslicher Halt für Wanderer und Besucher, die die Landschaften rund um La Brigue erkunden."
+      }
+    },
+    "sports": {
+      "title": "Sport & Aktivitäten",
+      "items": [
+        {
+          "alt": "Kletterer an einer Klettersteigwand über dem Tal",
+          "title": "Klettersteig",
+          "description": "Diese ungewöhnliche Sportart, mit der auch fitte, aber ungeübte Begeisterte Berge erklimmen können, gibt es in La Brigue und Tende. Der Klettersteig von La Brigue verläuft an einer 80 Meter hohen senkrechten Felswand über dem Dorf und umfasst 8 Seilbrücken sowie eine 120 Meter lange Seilrutsche."
+        },
+        {
+          "alt": "Skifahrer auf einem verschneiten Grat bei Limone Piemonte",
+          "title": "Skifahren",
+          "description": "Das nächste Skigebiet ist Limone Piemonte, 25 km von La Brigue entfernt und mit dem Auto oder Zug erreichbar. Die Verbindungstunnel durch den Col de Tende zwischen Frankreich und Italien, die 2020 durch den Sturm Alex zerstört wurden, sind wieder geöffnet, derzeit jedoch nur eingeschränkt befahrbar."
+        },
+        {
+          "alt": "Mountainbiker auf einem Trail mit Blick auf Alpengipfel",
+          "title": "Mountainbiken",
+          "description": "Es gibt zahlreiche Möglichkeiten, darunter eine 20 km lange Rundtour ab La Brigue."
+        },
+        {
+          "alt": "Menschen beim Training in einem Outdoor-Fitnesspark",
+          "title": "Outdoor-Fitness",
+          "description": "Am Fuß der eindrucksvollen Felswände von La Brigue bieten diese Outdoor-Fitnessparks ein erfrischendes Training unter freiem Himmel. Sportbegeisterte können mit dem eigenen Körpergewicht trainieren und dabei den Panoramablick auf die Alpen und das Tal genießen. Der perfekte, kostenlose Ort, um Kraft und Höhenausdauer mitten in der Natur aufzubauen."
+        },
+        {
+          "alt": "Tennisspieler auf einem Außenplatz bei Sonnenuntergang",
+          "title": "Tennis",
+          "description": "Vor der atemberaubenden Alpenlandschaft von La Brigue bietet Tennis eine temporeiche Alternative zu den anspruchsvollen Bergtouren der Gegend. Spieler können intensive Ballwechsel und präzise Volleys genießen, umgeben von imposanten Felswänden und historischen Talblicken. Eine perfekte Verbindung aus Höhenausdauer und Sport an der frischen Luft, mitten in den Bergen."
+        },
+        {
+          "alt": "Boulekugeln auf einem Platz in La Brigue",
+          "title": "Weitere Aktivitäten",
+          "description": "In La Brigue gibt es Freizeitanlagen im Freien, darunter einen schönen Hartplatz für Tennis, Tischtennis, ein Fitnessstudio, einen Kinderspielplatz und natürlich mehrere Pétanque-Plätze."
+        }
+      ]
+    }
+  },
+  "outAndAbout": {
+    "meta": {
+      "title": "Ausflüge | Les Alpes D’Azur",
+      "description": "Entdecken Sie die Umgebung von La Brigue — Täler, Kapellen, Panoramabahnen, Bergpässe, Skigebiete und die Mittelmeerküste."
+    },
+    "hero": {
+      "imageAlt": "Steindorf und Alpental bei La Brigue",
+      "titleLine1": "Die Wildnis erkunden,",
+      "titleLine2": "die Stille wiederentdecken.",
+      "subtitle": "Die Umgebung entdecken"
+    },
+    "intro": {
+      "title": "Unterwegs jenseits der Dorftore",
+      "paragraphs": [
+        "Von La Brigue aus öffnen sich die umliegenden Alpen und Täler zu einer Welt aus Wanderwegen, freskengeschmückten Kapellen, Panoramabahnen und hohen Bergpässen — alles bequem von Ihrem Rückzugsort aus erreichbar.",
+        "Ob für ruhige Spaziergänge am Fluss, Winterpisten jenseits der Grenze oder einen Tag an der Mittelmeerküste — jede Richtung bietet eine neue Möglichkeit, die Wildnis zu erkunden und die Stille wiederzuentdecken."
+      ]
+    },
+    "cards": [
+      {
+        "alt": "Bach und Felsblöcke im Vallon de la Lévenza",
+        "titleLead": "Vallon de la",
+        "titleAccent": "Lévenza",
+        "body": "Folgen Sie dem klaren Bergwasser zwischen schattigen Felsen und Wald. Ein gemütlicher Spaziergang nahe dem Dorf, ideal zum Abkühlen und Verweilen am Bach."
+      },
+      {
+        "alt": "Zug im Bahnhof La Brigue",
+        "titleLead": "Train des",
+        "titleAccent": "Merveilles",
+        "body": "Fahren Sie mit der Panoramabahn durch das Roya-Tal — eine unvergessliche Reise, die das Dorfleben mit Bergpanoramen und nahe gelegenen italienischen Städten verbindet."
+      },
+      {
+        "alt": "Menschen in Tracht auf dem Pont du Coq",
+        "titleLead": "Pont du",
+        "titleAccent": "Coq",
+        "body": "Eine historische Steinbrücke und ein Treffpunkt, an dem das lokale Erbe lebendig wird — besonders während der Feste und Dorffeiern."
+      },
+      {
+        "alt": "Fresken im Inneren von Notre-Dame des Fontaines",
+        "titleLead": "Notre-Dame des",
+        "titleAccent": "Fontaines",
+        "body": "Eine der großen bemalten Kapellen der Region, voller leuchtender Fresken, die einen ruhigen Besuch und einen genauen Blick auf alpine Sakralkunst belohnen."
+      },
+      {
+        "alt": "Türkisfarbener Bergsee im Mercantour",
+        "titleLead": "Der",
+        "titleAccent": "Mercantour",
+        "body": "Hochgelegene Seen, wilde Grate und geschützte Natur. Der Nationalpark Mercantour ist der Ort für längere Wanderungen und unvergessliches alpines Licht."
+      },
+      {
+        "alt": "Bergpfad zum Weiler Castérino",
+        "titleLead": "Der Weiler",
+        "titleAccent": "Castérino",
+        "body": "Ein friedlicher Bergweiler, erreichbar über malerische Wanderwege und Talstraßen — perfekt zum Wandern, Naturbeobachten und Genießen der Stille."
+      },
+      {
+        "alt": "Kurvenreiche Bergstraße am Col de Tende",
+        "titleLead": "Col de",
+        "titleAccent": "Tende",
+        "body": "Überqueren Sie die Grenze zwischen Frankreich und Italien auf einem der historischen Hochpässe der Alpen — imposante Felswände, weite Kehren und unvergessliche Aussichtspunkte."
+      },
+      {
+        "alt": "Skipisten in Limone Piemonte",
+        "titleLead": "Limone",
+        "titleAccent": "Piemonte",
+        "body": "Wintersport und Bergluft gleich hinter der Grenze. Limone bietet Skifahren und einen lebhaften alpinen Tagesausflug ab La Brigue."
+      },
+      {
+        "alt": "Sonniger Platz in einer Küstenstadt am Mittelmeer",
+        "titleLead": "Die",
+        "titleAccent": "Küste",
+        "body": "Fahren Sie hinunter ans Mittelmeer für Farben, Meeresluft und Caféterrassen — ein heller Kontrast zu den Hochtälern der Alpes-Maritimes."
+      },
+      {
+        "alt": "Zitrusskulpturen beim Fête du Citron in Menton",
+        "titleLead": "Fête du",
+        "titleAccent": "Citron",
+        "body": "Das berühmte Zitrusfest von Menton erfüllt die Küste mit Duft, Farbe und spektakulären Fruchtskulpturen — ein fröhlicher saisonaler Ausflug."
+      }
+    ]
+  }
+}
